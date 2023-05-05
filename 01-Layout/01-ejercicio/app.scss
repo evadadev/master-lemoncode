@@ -1,0 +1,173 @@
+$primary-color: red;
+$secondary-color: blue;
+$third-color: green;
+$letter-color-1: grey;
+$letter-color-2: khaki;
+$letter-color-3: violet;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  gap: 15px;
+  grid-template: repeat(3, 1fr) / 1fr;
+}
+
+.container-1 {
+  display: flex;
+  gap: 5px;
+
+  .box {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+    color: $letter-color-1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  
+  .darken-4 {
+    background-color: darken($color: $primary-color, $amount: 20%);
+    background-color: desaturate($primary-color, 50%);
+  }
+  .darken-3 {
+    background-color: darken($color: $primary-color, $amount: 15%);
+    background-color: desaturate($color: $primary-color, $amount: 40%);
+  }
+  .darken-2 {
+    background-color: darken($color: $primary-color, $amount: 10%);
+    background-color: desaturate($color: $primary-color, $amount: 30%);
+  }
+  .darken-1 {
+    background-color: darken($color: $primary-color, $amount: 5%);
+    background-color: desaturate($color: $primary-color, $amount: 20%);
+  }
+  .lighten-1 {
+    background-color: lighten($color: $primary-color, $amount: 5%);
+  }
+  .lighten-2 {
+    background-color: lighten($color: $primary-color, $amount: 10%);
+  }
+  .lighten-3 {
+    background-color: lighten($color: $primary-color, $amount: 15%);
+  }
+  .lighten-4 {
+    background-color: lighten($color: $primary-color, $amount: 20%);
+  }
+  
+  .base-color {
+    background-color:$primary-color;
+    width: 72px;
+    color: white;
+  }
+  
+}
+
+.container-2 {
+  display: flex;
+  gap: 5px;
+
+  .box {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+    color: $letter-color-2;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .darken-4 {
+    background-color: darken($secondary-color, 30%);
+    background-color: desaturate($secondary-color, 50%);
+  }
+  .darken-3 {
+    background-color: darken($color: $secondary-color, $amount: 25%);
+    background-color: desaturate($secondary-color, 40%);
+  }
+  .darken-2 {
+    background-color: darken($color: $secondary-color, $amount: 20%);
+    background-color: desaturate($secondary-color, 30%);
+  }
+  .darken-1 {
+    background-color: darken($color: $secondary-color, $amount: 10%);
+    background-color: desaturate($secondary-color, 20%);
+  }
+  .lighten-1 {
+    background-color: lighten($color: $secondary-color, $amount: 10%);
+  }
+  .lighten-2 {
+    background-color: lighten($color: $secondary-color, $amount: 15%);
+  }
+  .lighten-3 {
+    background-color: lighten($color: $secondary-color, $amount: 20%);
+  }
+  .lighten-4 {
+    background-color: lighten($color: $secondary-color, $amount: 30%);
+  }
+  .base-color {
+    background-color:$secondary-color;
+    width: 72px;
+    color: white;
+  }
+}
+.container-3 {
+  display: flex;
+  gap: 5px;
+
+  .box {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+    color: $letter-color-3;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .darken-4 {
+    background-color: darken($third-color, 15%);
+    background-color: desaturate($color: $third-color, $amount: 50%);
+  }
+  .darken-3 {
+    background-color: darken($color: $third-color, $amount: 10%);
+    background-color: desaturate($color: $third-color, $amount: 40%);
+  }
+  .darken-2 {
+    background-color: darken($color: $third-color, $amount: 5%);
+    background-color: desaturate($color: $third-color, $amount: 30%);
+  }
+  .darken-1 {
+    background-color: darken($color: $third-color, $amount: 3%);
+    background-color: desaturate($color: $third-color, $amount: 20%);
+  }
+  .lighten-1 {
+    background-color: lighten($color: $third-color, $amount: 5%);
+  }
+  .lighten-2 {
+    background-color: lighten($color: $third-color, $amount: 10%);
+  }
+  .lighten-3 {
+    background-color: lighten($color: $third-color, $amount: 15%);
+  }
+  .lighten-4 {
+    background-color: lighten($color: $third-color, $amount: 20%);
+  }
+
+  .base-color {
+    background-color:$third-color;
+    width: 72px;
+    color: white;
+  }
+}
