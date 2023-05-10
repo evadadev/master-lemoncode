@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+header {
+    width: 100%;
+    
+    .toolbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    input {
+        border: 2px solid #cfcfcf;
+    }
+}
+
+.header {
+    display: flex; 
+    align-items: center;
+    background-color: #cdde1c;
+    font-size: medium;
+    color: white;
+    padding: 10px;
+    height: 30px;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    height: 100%;
+    @media screen and (width <= 500px) {
+        flex-direction: column;
+    }
+    
+    nav {
+        background-color: #393e06;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        @media screen and (width <= 500px) {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        padding-top: 18px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+        @media screen and (width <= 500px) {
+            display: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+        width: 100%;
+        padding: 0 0 10px;
+        @media screen and (width <= 500px) {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .item {
+            background-color: #f9fbe2;
+            border: 1px solid #cfcfcf;
+            padding: 10px;
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: start;
+        gap: 20px;
+        padding: 30px;
+        width: 100%;
+        overflow: auto;
+        @media screen and (width <= 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (width <= 500px) {
+            grid-template-columns: 1fr;
+        }
+        
+        .box {
+            height: 150px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 3px;
+            gap: 5px;
+            @media screen and (width <= 500px) {
+                width: 90%;
+                flex-direction: row;
+                justify-content: start;
+                padding-left: 10px;
+            }
+            
+            img {
+                width: 80px;
+                border-radius: 50%;
+            }
+
+            span {
+                font-size: small;
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: #f9fbe2;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: small;
+    padding: 10px;   
+}
