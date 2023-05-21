@@ -1,0 +1,157 @@
+body {
+    padding: 10;
+    margin: 0;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Jost', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+    @media screen and (width < 425px) {
+        justify-content: center;
+        gap: 10px;
+    }
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            height: 50px;
+            @media screen and (width < 425px) {
+                height: 100px;
+            }
+        }
+        
+        .platform-title {
+            padding-left: 5px;
+            @media screen and (width < 1280px) {
+                display: none;
+            }
+        }
+    }
+    
+    .header-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        gap: 20px;
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 60px;
+            &:hover {
+                background-color: white;
+                color: black;
+                border-radius: 2px;
+                
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: auto;
+    
+    .section-title {
+        color: white;
+        padding-top: 30px;
+        #top-text::before {
+            font-weight: bold;
+            content: "5";
+            @media screen and (width < 1280px){
+                content: "3";
+            }
+        }
+    }
+    
+}
+.top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @media screen and (width <= 1280px) {
+        min-width: 250px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+        
+    .none {
+        @media screen and (width < 1280px) {
+            display: none;
+        }
+    }
+    @media screen and (width < 425px) {
+        min-width: 225px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    
+    .top-item {
+        width: 100%;
+    }
+    
+    img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.first, .second {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+    @media screen and (width >= 426px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    
+    @media screen and (width > 768px) {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+    
+    @media screen and (width > 1280px) {
+        min-width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .item {
+        width: 100%;
+        min-height: 170px;
+        
+        img {
+            width: 100%;
+            height: 130px;
+            
+            &:hover {
+                height: 160px;
+                transition: 0.5ms;
+                border-radius: 3px;
+            }
+        }
+    }
+}
