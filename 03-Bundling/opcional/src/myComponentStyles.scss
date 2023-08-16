@@ -1,0 +1,14 @@
+$background: antiquewhite;
+$backgroundTitle:  lemonchiffon;
+
+body {
+    background-color: $background;
+}
+img {
+    width: 200px;
+}
+
+:global(.title-hello) {
+    background-color: $backgroundTitle;
+    font-size: 30px;
+}
