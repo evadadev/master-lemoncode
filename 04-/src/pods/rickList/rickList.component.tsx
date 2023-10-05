@@ -14,11 +14,11 @@ export const RickList: React.FC<Props> = (props) => {
     <div className="user-list-container">   
     <Header /> 
     {members.map((member) => 
-    <> 
+    <React.Fragment key={member.id}> 
         <span>{member.id}</span>
         <img src={member.image} />
         <Link to={routes.rickDetail(member.id)}>{member.name}</Link>
-    </>   
+    </React.Fragment>   
     )}
     </div>
     ) 

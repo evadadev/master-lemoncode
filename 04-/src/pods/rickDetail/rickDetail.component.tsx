@@ -16,10 +16,10 @@ export const RickDetail: React.FC<Props> = (props) => {
                 <img src={member.image} />
             </div>
             <div>
-                <h1>{member.name}</h1>
-                <h2>{member.id}</h2>
-                <h2>{member.species}</h2>
-                <h2>{member.status}</h2>
+                <h1>nombre: {member.name}</h1>
+                <h2>id: {member.id}</h2>
+                <h2>especie: {member.species}</h2>
+                <h2>estado: {member.status}</h2>
             </div>
             <Link to={routes.rickList}>Back to Rick and Morty</Link>
         </div>

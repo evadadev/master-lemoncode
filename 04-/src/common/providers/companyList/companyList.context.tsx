@@ -6,8 +6,8 @@ interface SearchContext {
 }
 
 export const SearchContext = React.createContext<SearchContext> ({
-    search: "Lemoncode",
-    setSearch: (value) => {}
+    search: "",
+    setSearch: () => {}
 })
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 
 export const SearchContextProvider: React.FC<Props> = (props) => {
     const { children } = props;
-    const [ search, setSearch ] = React.useState("");
+    const [ search, setSearch ] = React.useState("Lemoncode");
 
     return (
         <SearchContext.Provider 

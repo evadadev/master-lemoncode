@@ -16,10 +16,10 @@ export const CompanyDetail: React.FC<Props> = (props) => {
             <img src={member.avatarUrl} />
             </div>
             <div>
-                <h1>{member.name}</h1>
-                <h2>{member.login}</h2>
-                <h2>{member.id}</h2>
-                <h2>{member.company}</h2>
+                <h1>nombre: {member.name}</h1>
+                <h2>acceso: {member.login}</h2>
+                <h2>id: {member.id}</h2>
+                <h2>compañía: {member.company}</h2>
             </div>
         </div>
         <Link to={routes.companyList}>Back to company </Link>

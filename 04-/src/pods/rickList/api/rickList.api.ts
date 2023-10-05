@@ -1,5 +1,5 @@
 import { Apimodel } from "./rickList.apiModel"
 
-export const getApiRick = (): Promise<Apimodel> => 
-    fetch(`https://rickandmortyapi.com/api/character`)
+export const getApiRick = (search): Promise<Apimodel> => 
+    fetch(`https://rickandmortyapi.com/api/character${search}`)
     .then((r) => r.json())
