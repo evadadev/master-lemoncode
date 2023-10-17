@@ -1,12 +1,12 @@
 import React from "react";
 import { pets } from "@/core/comon/db";
-import { DogList } from "./dogList.component";
+import { PetsList } from "../pets/petsComponents";
 
 
 export const DogListContainer: React.FC = () => {
     const dogs = pets.filter((pet) => pet.type === "dog")
 
     return(
-        <DogList pets={dogs}/> 
+        <PetsList items={dogs}/> 
     )
 }
