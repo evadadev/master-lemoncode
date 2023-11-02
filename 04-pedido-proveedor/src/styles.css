@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100% vh;
+}
+
+.layout-app-container {
+  gap: 15px;
+}
+
+.customer-container {
+  border: 1px solid black;
+  gap: 30px;
+  margin: 15px;
+  padding: 15px;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.validation-container {
+  padding: 20px;
+}
+
+.order-container {
+  border: 1px solid black;
+  gap: 30px;
+  margin: 15px;
+  padding: 15px;
+  width: 80%;
+  height: 80%;
+}
+
+table {
+  border: 2px 2px 2px solid black;
+  width: 100%;
+}
+
+.table-container {
+  border: 1px solid black;
+}
+
+table tr td, table tr th {
+  border: 1px solid black;
+  width: 25%;
+  height: 50px;
+}
+
