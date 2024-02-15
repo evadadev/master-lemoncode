@@ -620,6 +620,17 @@
       "bestSenteces": "",
       "type": "especial",
       "bestScenes": "no soy tonto, soy especial"
+    },
+    {
+      "id": 23,
+      "name": "lemoncoders",
+      "image": "https://rickandmortyapi.com/api/character/avatar/19.jpeg",
+      "species": "alive",
+      "status": "pro",
+      "gender": "sin determinar",
+      "bestSenteces": "",
+      "type": "listo",
+      "bestScenes": "lo vas a conseguir, jajja"
     }
   ]
 }
